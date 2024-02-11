@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- <link rel="stylesheet" href="../bootstrap files/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* n a v */
+        .nav-item {
+            font-size: large;
+            margin-right: 10px;
+        }
+
+        button.navbar-toggler {
+            margin-right: 30px;
+        }
+
+        a.nav-link {
+            color: white;
+            font-size: larger;
+            font-weight: 600;
+        }
+
+        .d-flex {
+            width: 230px;
+        }
+
+        .form-control {
+            background-color: rgb(255, 204, 0);
+            width: 230px;
+            height: 45px;
+            box-shadow: 2px 2px 7px black;
+        }
+
+
+        .d-flex .btn {
+            background-color: rgb(19, 133, 233);
+            position: relative;
+            right: 41px;
+        }
+
+        /* nav End */
+        /* hero start*/
+
+        #hero {
+            background-color: rgb(225, 172, 12);
+        }
+
+        #herocol1 :nth-child(1) {
+            padding: 3rem 0;
+            font-size: 80px;
+            line-height: 100%;
+        }
+
+        #herocol1 :nth-child(2) {
+            font-size: xx-large;
+            line-height: 120%;
+            padding: 1rem 0;
+        }
+
+        #herocol1 button {
+            width: 150px;
+            margin-right: 1rem;
+            padding: 15px;
+            font-size: large;
+            border: 1px solid white;
+
+        }
+
+        #herocol1 button:hover {
+            background: green;
+        }
+
+        #hero img {
+            filter: drop-shadow(6px 3px 15px yellowgreen);
+        }
+
+        /* hero end  */
+
+        /* hero2 start */
+        /* col-1 */
+
+        #hero2col1 h2 {
+            font-size: 33px;
+            font-weight: 500;
+        }
+
+        #hero2col1 p {
+            font-size: larger;
+            margin: 27px 0;
+        }
+
+        #hero2col1 button {
+            width: 150px;
+            height: 50px;
+            margin: 10px 0px;
+            font-weight: bold;
+        }
+
+        /* hero 3 start row-1 */
+        #hero3 {
+            background: rgb(248, 199, 4);
+            margin-top: 80px !important;
+            padding: 30px 80px 10px 80px !important;
+        }
+
+        #hero3row1 h1 {
+            padding-top: 20px;
+            font-size: 70px;
+        }
+
+        #hero3row1 p {
+            font-size: 30px;
+            line-height: 100%;
+            margin: 10px 0;
+        }
+
+        /* row-2   */
+        .hero3row2cols {
+            margin: 50px 0;
+        }
+
+        .hero3row2cols h2 {
+            margin: 30px 0 10px 0;
+            font-size: 30px;
+        }
+
+        .hero3row2cols p {
+            font-size: 25px;
+            line-height: 110%;
+        }
+
+        /*  ******  hero-7 row  ******    */
+        #hero7 {
+            background-color: rgba(250, 209, 0, 0.731);
+        }
+
+        #hero7row div {
+            padding: 100px 0;
+        }
+
+        #hero7row div h4 {
+            font-weight: bold;
+        }
+
+        #background {
+            background-image: url(images/lion.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* hero-9 start */
+        #hero9row div {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        #hero9 h2 {
+            font-size: 40px;
+        }
+
+        #hero9 h6 {
+            color: white;
+            font-size: 17px;
+        }
+
+        #hero9col3 {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            text-align: right !important;
+        }
+
+        #hero9col3 form {
+            padding: 15px;
+            position: relative;
+            width: 250px;
+        }
+
+        #hero9col3 form input {
+            width: 100%;
+            padding: 10px 20px;
+            outline: none;
+            background-color: rgb(241, 203, 12);
+        }
+
+        #hero9col3 form a {
+            position: absolute;
+            right: 15px;
+            font-size: 31px;
+            color: white;
+            background-color: rgb(15, 235, 239);
+            padding: 0 15px;
+        }
+
+        #hero9col3 #icons a {
+            font-size: xx-large;
+            color: white;
+            padding: 0 10px;
+        }
+
+        /* ******************************************************************************** */
+        /* media quaryes 1420 */
+
+        @media (max-width:1420px) {
+
+            /* hero */
+            #herocol1 :nth-child(1) {
+                padding: 2rem 0;
+                font-size: 50px;
+            }
+
+            #herocol1 :nth-child(2) {
+                font-size: x-large;
+            }
+
+            /* hero9 */
+
+        }
+
+        /* ********************************************************* */
+        /*quary 1020*/
+        @media (max-width:1020px) {
+
+            /* hero & nav */
+            #navbarSupportedContent {
+                padding: 20px;
+                padding-right: 0;
+            }
+
+            #navbarSupportedContent {
+                margin-left: 10px !important;
+            }
+
+            #herocol1 :nth-child(1) {
+                padding: 0;
+                font-size: 40px;
+            }
+
+            #herocol1 :nth-child(2) {
+                font-size: large;
+            }
+
+            #herocol1 button {
+                width: 120px;
+                margin-right: .5rem;
+                padding: 10px;
+                font-size: medium;
+            }
+
+            #herocol2 img {
+                width: 300px;
+            }
+
+            /* hero2 col-1*/
+            #hero2col1 {
+                padding-right: 30px !important;
+            }
+
+            #hero2col1 button {
+                width: 130px;
+                height: 40px;
+                margin: 0;
+            }
+
+            #hero2cal1 p {
+                font-size: large;
+                margin: 10px 0;
+            }
+
+            #hero2col1 h2 {
+                font-size: 25px;
+            }
+
+            /* hero2 col-2  img */
+            #hero2col2 img {
+                width: 300px;
+            }
+        }
+
+
+        /* **************************************************************************** */
+        /*quary 770 */
+        @media (max-width:770px) {
+            #herocol2 {
+                display: none;
+            }
+
+            #logo {
+                width: 150px !important;
+                margin-left: -50px;
+            }
+
+            /* hero2 col-2 img */
+            #hero2col2 img {
+                margin: 150px 0 0 0;
+            }
+
+            /* hero-3 */
+            #hero3 {
+                margin-top: 350px !important;
+                padding: 10px !important;
+            }
+
+            #hero3row1 h1 {
+                font-size: 55px;
+            }
+
+            #hero3row1 p {
+                font-size: 20px !important;
+                margin-bottom: -90px;
+            }
+
+            /* hero-4  */
+            #hero4col2 {
+                margin: 150px 0 -300px 0 !important;
+            }
+
+            #hero4col1 img {
+                width: 300px;
+                padding: 10px;
+            }
+
+            #hero4row #hero4col1 {
+                margin-top: 150px !important;
+            }
+
+            .container-fluid .mt-5 .p-5 .hero6copy {
+                margin-top: 100px !important;
+            }
+
+            /* hero 7 */
+            #hero7row div {
+                padding: 30px 0;
+            }
+
+            /* hero: -9px; */
+            #hero9 h2 {
+                font-size: 30px;
+            }
+
+            #hero9 h6 {
+                color: white;
+                font-size: 15px;
+            }
+
+            #hero9col3 {
+                padding: 50px 0 !important;
+                align-items: center;
+            }
+
+            #hero9col3 {
+                text-align: center !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--       n a v       b a r        -->
+
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="images/Logo.png" id="logo" width="250px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-white" type="submit"><i
+                            class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- n  a v    e n d -->
+    <!-- hero -->
+    <div class="container-fluid">
+        <div class="row justify-content-evenly pt-5" id="hero">
+            <div class="col-md-6 p-5 text-white" id="herocol1">
+                <h1>First I want to be a veterinarian</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id exercitationem sed tenetur aut totam,
+                    blanditiis voluptate fuga vel alias architecto.</p>
+                <button type="button" class="btn btn-primary">Contact Us </button>
+                <button type="button" class="btn btn-outline-light text-white">Our Services</button>
+            </div>
+            <div class="col-md-4 p-5" id="herocol2">
+                <img src="images/dog.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- hero end -->
+    <!-- hero2 start -->
+    <div class="container-fluid ">
+        <div class="row mt-5 justify-content-evenly">
+            <div class="col-md-5 p-5" id="hero2col1">
+                <h2>As a Veterinarian and <br> lover of animals.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim sequi exercitationem expedita
+                    laudantium nam! Lorem ipsum dolor sit amet.</p>
+                <button type="button" class="btn btn-warning text-white">Our Services</button>
+            </div>
+            <div class="col-md-5 justify-content-center p-3 position-relative" id="hero2col2">
+                <img src="images/play img.png" width="400px"
+                    class="img-fluid position-absolute top-50 start-50 translate-middle" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- hero2 end -->
+    <!-- hero3 Start -->
+    <div class="container-fluid mt-5 p-5 text-white" id="hero3">
+        <div class="row text-center" id="hero3row1">
+            <h1>Title Here</h1>
+            <p>Lorem, ipsum dolor sit amet Lorem, ipsum dolor.<br>Eveniet repudiandae quas
+                enim?</p>
+        </div>
+        <div class="row justify-content-evenly mt-5" id="hero3row2">
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/1.png" class="img-fluid" alt="">
+                <h2>Veterinarian</h2>
+                <p>Lorem ipsum dolor sit amet adipisicing elit. Ipsum dicta deleniti soluta aut provident
+                    consectetur!</p>
+            </div>
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/2.png" class="img-fluid" alt="">
+                <h2>Veterinarian</h2>
+                <p>Lorem ipsum dolor sit amet adipisicing elit. Ipsum dicta deleniti soluta aut provident
+                    consectetur!</p>
+            </div>
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/3.png" class="img-fluid" alt="">
+                <h2>Veterinarian</h2>
+                <p>Lorem ipsum dolor sit amet adipisicing elit. Ipsum dicta deleniti soluta aut provident
+                    consectetur!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero3 end -->
+    <!-- hero-4 start   hero-2 copy-d -->
+
+    <div class="container-fluid " style="margin-top: 100px;">
+        <div class="row mt-5 justify-content-evenly" id="hero4row">
+            <div class="col-md-5 justify-content-center p-3 position-relative" id="hero4col1">
+                <img src="images/play img.png" width="400px"
+                    class="img-fluid position-absolute top-50 start-50 translate-middle" alt="">
+            </div>
+            <div class="col-md-5 p-5" id="hero4col2">
+                <h2>As a Veterinarian and <br> lover of animals.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim sequi exercitationem expedita
+                    laudantium nam! Lorem ipsum dolor sit amet.</p>
+                <button type="button" class="btn btn-warning text-white">Our Services</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero - 4 done by help of copy hero-2 -->
+
+    <!-- hero-5 start with help of hero-3 ditto copy  -->
+    <div class="container-fluid mt-5 p-5 text-white" id="hero3">
+        <div class="row text-center" id="hero3row1">
+            <h1>Title Here</h1>
+            <p>Lorem, ipsum dolor sit amet Lorem, ipsum dolor.<br>Eveniet repudiandae quas
+                enim?</p>
+        </div>
+        <div class="row justify-content-evenly mt-5" id="hero3row2">
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/4.png" class="img-fluid" alt="">
+                <h2><del> $79 </del>&nbsp;&nbsp; $59</h2>
+                <button type="button" class="btn btn-info rounded-5 text-white">&nbsp; Buy Now &nbsp;</button>
+            </div>
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/5.png" class="img-fluid" alt="">
+                <h2><del> $149 </del>&nbsp;&nbsp; $49</h2>
+                <button type="button" class="btn btn-info rounded-5 text-white">&nbsp; Buy Now &nbsp;</button>
+            </div>
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/6.png" class="img-fluid" alt="">
+                <h2><del> $99 </del>&nbsp;&nbsp; $36</h2>
+                <button type="button" class="btn btn-info rounded-5 text-white">&nbsp; Buy Now &nbsp;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero 5 end with help copy hero-3 -->
+    <!-- hero 6 start with copy hero-3/hero-5 -->
+    <div class="container-fluid mt-5 p-5" id="hero6">
+        <div class="row text-center" id="hero3row1">
+            <h1>Vetcare Team</h1>
+            <p>Lorem, ipsum dolor sit amet Lorem, ipsum dolor.<br>Eveniet repudiandae quas
+                enim?</p>
+        </div>
+        <div class="row justify-content-evenly mt-5" id="hero3row2">
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/7.png" class="img-fluid" alt="">
+                <h2>Sonia</h2>
+                <h6>(Jaipur)</h6>
+            </div>
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/8.png" class="img-fluid" alt="">
+                <h2>Radhika</h2>
+                <h6>(Delhi)</h6>
+            </div>
+            <div class="col-md-3 text-center hero3row2cols">
+                <img src="images/9.png" class="img-fluid" alt="">
+                <h2>Jaggu</h2>
+                <h6>(India)</h6>
+            </div>
+        </div>
+    </div>
+    <!-- hero-6 end -->
+    <!-- hero-7 start -->
+    <div id="background">
+        <div class="container-fluid p-5" id="hero7">
+            <div class="row justify-content-evenly text-center text-white" id="hero7row">
+                <div class="col-md-3">
+                    <h1><i class="bi bi-heart-pulse"></i></h1><br>
+                    <h4>+34789 <br> Happy Clients</h4>
+                </div>
+                <div class="col-md-3">
+                    <h1><i class="bi bi-balloon-heart"></i></h1><br>
+                    <h4>+34789 <br> Departament</h4>
+                </div>
+                <div class="col-md-3">
+                    <h1><i class="bi bi-virus2"></i></h1><br>
+                    <h4>+34789 <br> Vaccinations</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero-7 end -->
+
+    <!-- hero-8 started copyed hero-6 copy is cpy hero-3-->
+    <div class="container-fluid mt-5 p-5" id="hero6">
+        <div class="row text-center" id="hero3row1">
+            <h1>Recent Posts</h1>
+            <p>Lorem, ipsum dolor sit amet Lorem, ipsum dolor.<br>Eveniet repudiandae quas
+                enim?</p>
+        </div>
+        <div class="row justify-content-evenly mt-5" id="hero3row2">
+            <div class="col-md-3  hero3row2cols">
+                <img src="images/10.png" class="img-fluid" alt="">
+                <h2>As a veterinarian and lover of animals</h2>
+                <h6 style="color: rgb(0, 100, 100);font-size: small;">FEBRUARY 09, 2020</h6>
+                <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fugit labore expedita itaque
+                    deleniti molestiae.</h6><br>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Read More<sup>+</sup></h6>
+                </a>
+            </div>
+            <div class="col-md-3  hero3row2cols">
+                <img src="images/11.png" class="img-fluid" alt="">
+                <h2>As a veterinarian and lover of animals</h2>
+                <h6 style="color: rgb(0, 100, 100);font-size: small;">FEBRUARY 09, 2020</h6>
+                <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fugit labore expedita itaque
+                    deleniti molestiae.</h6><br>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Read More<sup>+</sup></h6>
+                </a>
+            </div>
+            <div class="col-md-3  hero3row2cols">
+                <img src="images/12.png" class="img-fluid" alt="">
+                <h2>As a veterinarian and lover of animals</h2>
+                <h6 style="color: rgb(0, 100, 100);font-size: small;">FEBRUARY 09, 2020</h6>
+                <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fugit labore expedita itaque
+                    deleniti molestiae.</h6><br>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Read More<sup>+</sup></h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- hero-8     end     copyed hero-6 -->
+
+    <!-- hero-9  start  -->
+    <div class="container-fluid p-5 bg-dark text-white" id="hero9">
+        <div class="row justify-content-evenly pt-3 pb-3" id="hero9row">
+            <div class="col-md-2" id="hero9col1">
+                <h2>About</h2>
+                <a href="#" style="text-decoration: none;">
+                    <h6>History</h6>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Our Team</h6>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Brand </h6>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Privacy</h6>
+                </a>
+            </div>
+
+            <div class="col-md-2" id="hero9col2">
+                <h2>Services</h2>
+                <a href="#" style="text-decoration: none;">
+                    <h6>How to order</h6>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Orders</h6>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Promo</h6>
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <h6>Payment</h6>
+                </a>
+            </div>
+
+            <div class="col-md-4" id="hero9col3">
+                <h2>Title</h2>
+                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h6>
+                <form action="" id="hero8form">
+                    <input type="email" placeholder="E-mail">
+                    <a href="#">
+                        <i class="bi bi-send-fill"></i>
+                    </a>
+                </form>
+                <div id="icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end 😊 -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
